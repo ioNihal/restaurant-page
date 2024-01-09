@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurant Website</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css"
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Restaurant</a>
+    <a class="navbar-brand" href="#">Sathaar Bucks</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,9 +27,9 @@
   </nav>
 
   <!-- Home Section -->
-  <section id="home" class="container mt-5">
+  <section id="home" class="mycontainer">
+    <span class="invisible-block"></span>
     <h2>Menu</h2>
-
     <div class="row">
       <div class="col-md-4 mb-4">
         <div class="card">
@@ -63,33 +63,87 @@
           </div>
         </div>
       </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="food4.jpg" class="card-img-top" alt="Food Item 4">
+          <div class="card-body">
+            <h5 class="card-title">Dish 4</h5>
+            <p class="card-text">Mouthwatering description of Dish 3.</p>
+            <p class="card-text">$12.99</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 mycard">
+        <div class="card">
+          <img src="food5.jpg" class="card-img-top" alt="Food Item 5">
+          <div class="card-body">
+            <h5 class="card-title">Dish 5</h5>
+            <p class="card-text">Mouthwatering description of Dish 3.</p>
+            <p class="card-text">$12.99</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="food6.jpg" class="card-img-top" alt="Food Item 6">
+          <div class="card-body">
+            <h5 class="card-title">Dish 6</h5>
+            <p class="card-text">Mouthwatering description of Dish 3.</p>
+            <p class="card-text">$12.99</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Booking Section -->
-  <section id="booking" class="container mt-5">
+  <section id="booking" class="mycontainer">
+    <span class="invisible-block"></span>
     <h2>Booking</h2>
-
     <form>
       <div class="form-row">
-        <div class="form-group col-md-6">
+        <div class="form-group col-5">
           <label for="dish1Quantity">Dish 1 Quantity</label>
           <input type="number" class="form-control" id="dish1Quantity" placeholder="Enter quantity">
         </div>
 
-        <div class="form-group col-md-6">
+        <div class="form-group col-5">
           <label for="dish2Quantity">Dish 2 Quantity</label>
           <input type="number" class="form-control" id="dish2Quantity" placeholder="Enter quantity">
+        </div>
+
+        <div class="form-group col-5">
+          <label for="dish3Quantity">Dish 3 Quantity</label>
+          <input type="number" class="form-control" id="dish3Quantity" placeholder="Enter quantity">
+        </div>
+
+        <div class="form-group col-5">
+          <label for="dish4Quantity">Dish 4 Quantity</label>
+          <input type="number" class="form-control" id="dish4Quantity" placeholder="Enter quantity">
+        </div>
+
+        <div class="form-group col-5">
+          <label for="dish5Quantity">Dish 5 Quantity</label>
+          <input type="number" class="form-control" id="dish5Quantity" placeholder="Enter quantity">
+        </div>
+
+        <div class="form-group col-5">
+          <label for="dish6Quantity">Dish 6 Quantity</label>
+          <input type="number" class="form-control" id="dish6Quantity" placeholder="Enter quantity">
         </div>
         <!-- Add more food items with quantity input fields as needed -->
       </div>
 
-      <button type="submit" class="btn btn-primary">Place Order</button>
+      <button type="submit" class="btn btn-primary myformbtn">Place Order</button>
     </form>
   </section>
 
   <!-- Delivery Section -->
   <section id="delivery" class="container mt-5">
+    <span class="invisible-block"></span>
     <h2>Quick Delivery</h2>
 
     <p>We guarantee quick and efficient delivery to your doorstep!</p>

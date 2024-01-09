@@ -1,5 +1,54 @@
+body {
+    padding-top: 56px;
+    height: 100dvh;
+    width: 100% !important;
+}
 
-    body {
-      padding-top: 56px;
-    }
-  
+.invisible-block {
+    height: 50px;
+    display: block;
+}
+
+h2 {
+    margin: 0 0 0 0 !important;
+    padding: 20px 20px !important;
+}
+
+section.mycontainer {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+}
+
+.mycard {
+    height: 40% !important;
+}
+
+#booking {
+    margin: 50px 0 0 0 !important;
+    height: 100%;
+}
+
+.row , form {
+    margin: 30px 0 0 10px !important;
+}
+#delivery p , #delivery {
+    margin: 30px 0 0 0 !important;
+    padding:  0 0 0 4% !important ;
+}
+
+#delivery p {
+    font-size: 1rem;
+}
+
+.form-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-content: space-around !important;
+    justify-content: space-around !important;
+    flex-direction: row !important;
+}
+
+.myformbtn {
+    margin: 40px 0 0 4%;
+}
