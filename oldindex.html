@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Sathaar Bucks</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+        <li class="nav-item"><a class="nav-link" href="#delivery">Delivery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#payment">Payment</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="mycontainer">
+    <span class="invisible-block"></span>
+    <h2>Menu</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="food1.jpg" class="card-img-top" alt="Food Item 1">
+          <div class="card-body">
+            <h5 class="card-title">Dish 1</h5>
+            <p class="card-text">Delicious description of Dish 1.</p>
+            <p class="card-text">$10.99</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="food2.jpg" class="card-img-top" alt="Food Item 2">
+          <div class="card-body">
+            <h5 class="card-title">Dish 2</h5>
+            <p class="card-text">Tasty description of Dish 2.</p>
+            <p class="card-text">$8.99</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="food3.jpg" class="card-img-top" alt="Food Item 3">
+          <div class="card-body">
+            <h5 class="card-title">Dish 3</h5>
+            <p class="card-text">Mouthwatering description of Dish 3.</p>
+            <p class="card-text">$12.99</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="food4.jpg" class="card-img-top" alt="Food Item 4">
+          <div class="card-body">
+            <h5 class="card-title">Dish 4</h5>
+            <p class="card-text">Mouthwatering description of Dish 3.</p>
+            <p class="card-text">$12.99</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 mycard">
+        <div class="card">
+          <img src="food5.jpg" class="card-img-top" alt="Food Item 5">
+          <div class="card-body">
+            <h5 class="card-title">Dish 5</h5>
+            <p class="card-text">Mouthwatering description of Dish 3.</p>
+            <p class="card-text">$12.99</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="food6.jpg" class="card-img-top" alt="Food Item 6">
+          <div class="card-body">
+            <h5 class="card-title">Dish 6</h5>
+            <p class="card-text">Mouthwatering description of Dish 3.</p>
+            <p class="card-text">$12.99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="mycontainer">
+    <span class="invisible-block"></span>
+    <h2>Booking</h2>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-5">
+          <label for="dish1Quantity">Dish 1 Quantity</label>
+          <input type="number" class="form-control" id="dish1Quantity" placeholder="Enter quantity">
+        </div>
+
+        <div class="form-group col-5">
+          <label for="dish2Quantity">Dish 2 Quantity</label>
+          <input type="number" class="form-control" id="dish2Quantity" placeholder="Enter quantity">
+        </div>
+
+        <div class="form-group col-5">
+          <label for="dish3Quantity">Dish 3 Quantity</label>
+          <input type="number" class="form-control" id="dish3Quantity" placeholder="Enter quantity">
+        </div>
+
+        <div class="form-group col-5">
+          <label for="dish4Quantity">Dish 4 Quantity</label>
+          <input type="number" class="form-control" id="dish4Quantity" placeholder="Enter quantity">
+        </div>
+
+        <div class="form-group col-5">
+          <label for="dish5Quantity">Dish 5 Quantity</label>
+          <input type="number" class="form-control" id="dish5Quantity" placeholder="Enter quantity">
+        </div>
+
+        <div class="form-group col-5">
+          <label for="dish6Quantity">Dish 6 Quantity</label>
+          <input type="number" class="form-control" id="dish6Quantity" placeholder="Enter quantity">
+        </div>
+        <!-- Add more food items with quantity input fields as needed -->
+      </div>
+
+      <button type="submit" class="btn btn-primary myformbtn">Place Order</button>
+    </form>
+  </section>
+
+  <!-- Delivery Section -->
+  <section id="delivery" class="container mt-5">
+    <span class="invisible-block"></span>
+    <h2>Quick Delivery</h2>
+
+    <p>We guarantee quick and efficient delivery to your doorstep!</p>
+    <p>Delivery Time: Within 30 minutes</p>
+    <p>Our delivery service operates 7 days a week to ensure you get your favorite dishes whenever you crave them.</p>
+    <p>For any special requests or inquiries, please contact our customer support.</p>
+  </section>
+
+  <!-- Payment Section -->
+  <section id="payment" class="container mt-5">
+    <h2>Payment</h2>
+
+    <div id="orderSummary">
+      <!-- Order summary will be displayed here -->
+    </div>
+
+    <button id="checkoutBtn" class="btn btn-success">Checkout</button>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const dish1QuantityInput = document.getElementById("dish1Quantity");
+        const dish2QuantityInput = document.getElementById("dish2Quantity");
+        // Add more quantity inputs as needed
+
+        const orderSummary = document.getElementById("orderSummary");
+        const checkoutBtn = document.getElementById("checkoutBtn");
+
+        function updateOrderSummary() {
+          const dish1Quantity = parseInt(dish1QuantityInput.value) || 0;
+          const dish2Quantity = parseInt(dish2QuantityInput.value) || 0;
+          // Add more quantities as needed
+
+          const totalAmount = (dish1Quantity * 10.99) + (dish2Quantity * 8.99);
+          // Calculate total price based on food item prices
+
+          orderSummary.innerHTML = `
+            <h4>Order Summary</h4>
+            <p>Dish 1 x ${dish1Quantity}: $${(dish1Quantity * 10.99).toFixed(2)}</p>
+            <p>Dish 2 x ${dish2Quantity}: $${(dish2Quantity * 8.99).toFixed(2)}</p>
+            <!-- Add more order details as needed -->
+            <hr>
+            <p>Total: $${totalAmount.toFixed(2)}</p>
+          `;
+        }
+
+        dish1QuantityInput.addEventListener("input", updateOrderSummary);
+        dish2QuantityInput.addEventListener("input", updateOrderSummary);
+        // Add more event listeners for additional quantity inputs
+
+        checkoutBtn.addEventListener("click", function () {
+          alert("Thank you for your order! Payment processing logic goes here.");
+        });
+
+        updateOrderSummary();
+      });
+    </script>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="container mt-5">
+  <h2>Contact Us</h2>
+
+  <p>Have questions or suggestions? Reach out to us!</p>
+
+  <div class="row">
+    <div class="col-md-6">
+      <h4>Visit Us</h4>
+      <p>123 Main Street</p>
+      <p>Cityville, State, ZIP</p>
+    </div>
+
+    <div class="col-md-6">
+      <h4>Contact Information</h4>
+      <p>Email: info@restaurant.com</p>
+      <p>Phone: +1 (555) 123-4567</p>
+    </div>
+  </div>
+
+  <!-- You can also add a contact form here if needed -->
+</section>
+<!-- Footer Section -->
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2024 Your Restaurant Name</p>
+</footer>
+</body>
+</html>
+     
