@@ -310,3 +310,153 @@ button {
     margin: 10px auto 10% auto;
     width: 80%;
 }
+
+@media screen and (max-width: 600px) {
+    body {
+        height: 100dvh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+    .container {
+        height: 35%;
+    }
+
+    .box h1 {
+        font-size: 1rem;
+    }
+
+    .box-hr hr {
+        width: 3%;
+        margin: 0 10px 0 0;
+    }
+
+    .box-hr h6 {
+        font-size: 5px;
+    }
+
+    .box h3 {
+        font-size: 5px;
+        letter-spacing: 1px;
+    }
+
+    #home h1 {
+        margin: 20px 0 0 6%;
+        width: 13%;
+        font-size: 1rem;
+    }
+
+    .items-card {
+        max-width: 180px;
+        height: 80%;
+        margin: auto 60px;
+    }
+
+    .items-card img {
+        height: 50%;
+    }
+
+    .item-title {
+        font-size: 12px;
+        margin: 3px 0 0 3px;
+    }
+
+    .item-price {
+        font-size: 1rem;
+    }
+
+    .items-card p {
+        font-size: 10px;
+    }
+
+    #order h1 {
+        margin: 20px 0 0 5%;
+        width: 25%;
+        font-size: 1rem;
+    }
+
+    #order form {
+        height: 60%;
+        width: 85%;
+        margin: 20px auto;
+    }
+
+    .order-items {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+
+    .items-input {
+        height: 40px;
+        width: 150px;
+        padding: 5px;
+        justify-content: space-evenly;
+    }
+
+    .items-input span {
+        margin: 0 0 3px 0;
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .items-input input {
+        font-size: 8px;
+    }
+
+
+    form button {
+        width: 30%;
+        height: 30px;
+        margin: 15px 35%;
+        font-size: 10px;
+    }
+
+    #payment h1 {
+        margin: 20px 0 0 5%;
+        width: 20%;
+        font-size: 1rem;
+    }
+
+    .checkout-box {
+        height: 80%;
+        width: 85%;
+        margin: auto;
+    }
+
+    .checkout-box h2 {
+        text-align: center;
+        margin: 3% 0;
+        font-size: 16px;
+    }
+
+    .checkout-items {
+        height: 70%;
+        width: 100%;
+    }
+
+    .checkout-column {
+        height: 80%;
+        width: 90%;
+        margin: auto;
+        letter-spacing: 1px;
+    }
+
+    button {
+        width: 30%;
+        height: 30px;
+        margin: auto 35%;
+    }
+
+    #about h1 {
+        font-size: 1rem;
+    }
+    
+    #about p {
+        margin: 0 auto;
+        width: 80%;
+        font-size: 10px;
+    }
+}
