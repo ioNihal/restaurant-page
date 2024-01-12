@@ -70,22 +70,26 @@ body::-webkit-scrollbar {
 .box-hr h6 {
     margin: 0;
     width: 90%;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .box h1 {
     font-size: 3rem;
     margin: 0;
+    font-family: 'DM Serif Display', serif;
 }
 
 .box h3 {
     margin: 5px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
 }
 
 #home {
     background-color: rgb(14, 13, 13);
     display: flex;
     flex-direction: column;
-    
+
 }
 
 #home h1 {
@@ -124,7 +128,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .items-card img {
@@ -135,18 +139,22 @@ body::-webkit-scrollbar {
 
 .item-title {
     font-size: 1rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
     font-weight: bold;
-    margin: 0 0 0 3px;
+    margin: 5px 0 0 3px;
 }
 
 .item-price {
     font-size: 1.5rem;
     font-weight: bold;
-    margin: 0 0 0 3px;
+    margin: auto 0 0 3px;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .items-card p {
     margin: 5px 0 10px 3px;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 
@@ -195,12 +203,15 @@ body::-webkit-scrollbar {
 
 .items-input span {
     margin: 0 0 5px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
 }
 
 .items-input input {
 
     border: 1px solid rgba(212, 212, 212, 0.842);
     text-align: right;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .items-input input:focus-visible {
@@ -240,6 +251,31 @@ form button {
     margin: 20px auto;
     background-color: rgb(233, 233, 233);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.checkout-box h2 {
+    text-align: center;
+    margin: 0 0 10% 0;
+}
+
+.checkout-items {
+    height: 60%;
+    width: 100%;
+}
+
+.checkout-column {
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: auto;
 }
 
 button {
@@ -258,4 +294,19 @@ button {
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+#about h1 {
+    color: rgb(196, 39, 0);
+    text-align: center;
+}
+
+#about p {
+    color: antiquewhite;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin: 10px auto 10% auto;
+    width: 80%;
 }
