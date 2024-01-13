@@ -82,32 +82,32 @@
     <h1>ORDER NOW</h1>
     <form action="#payment">
       <div class="order-items">
-        <div class="items-input" id="input2">
+        <div class="items-input" id="input1">
           <span class="input-title">Sunshine Love Toast</span>
-          <input type="number" id="quantity" value="0">
+          <input type="number" id="toast" placeholder="0"  min="0">
         </div>
-        <div class="items-input" id="input4">
+        <div class="items-input" id="input2">
           <span class="input-title">Lemon Posset</span>
-          <input type="number" id="quantity" value="0">
-        </div>
-        <div class="items-input" id="input5">
-          <span class="input-title">Royal Butter Chicken</span>
-          <input type="number" id="quantity" value="0">
-        </div>
-        <div class="items-input" id="input6">
-          <span class="input-title">Shepherd’s Pie</span>
-          <input type="number" id="dsg " value="0">
+          <input type="number" id="posset" placeholder="0" min="0">
         </div>
         <div class="items-input" id="input3">
-          <span class="input-title">Tuna Nicoise Salad Bowl</span>
-          <input type="number" id="quantity" value="0">
+          <span class="input-title">Royal Butter Chicken</span>
+          <input type="number" id="chicken" placeholder="0"  min="0">
         </div>
-        <div class="items-input" id="input1">
+        <div class="items-input" id="input4">
+          <span class="input-title">Shepherd’s Pie</span>
+          <input type="number" id="pie" placeholder="0"  min="0">
+        </div>
+        <div class="items-input" id="input5">
+          <span class="input-title">Tuna Nicoise Salad Bowl</span>
+          <input type="number" id="salad" placeholder="0"  min="0">
+        </div>
+        <div class="items-input" id="input6">
           <span class="input-title">Classic Risotto alla Milanese</span>
-          <input type="number" id="quantity" value="0">
+          <input type="number" id="risotto" placeholder="0" min="0">
         </div>
       </div>
-      <button type="submit" value="addCart">ADD TO CART</button>
+      <button type="submit" value="addCart" id="addCart">ADD TO CART</button>
     </form>
   </section>
   <section id="payment" class="container">
@@ -116,14 +116,15 @@
       <div class="checkout-items">
         <h2>ITEMS IN CART</h2>
         <div class="checkout-column" id="checkoutColumn">
-          <span>Items : 0</span>
-          <span>GST : &#8377 0</span>
-          <span>Tip : &#8377 10 </span>
-          <span>Total : &#8377 0</span>
+          <span id="itemNo">Total Items : 0</span>
+          <span id="gstval">GST : &#8377 0</span>
+          <span id="tipval">Tip : &#8377 0 </span>
+          <span id="total">Total : &#8377 0</span>
         </div>
       </div>
       <button type="submit" value="order">CHECK OUT</button>
     </div>
+    <script type="text/javascript" src="script.js"></script>
   </section>
   <section id="about" class="container">
     <h1>ABOUT US</h1>
