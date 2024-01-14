@@ -14,7 +14,15 @@
 
 </head>
 
-<body>
+<body onscroll="scrollFunction()">
+  <div class="navbar" id="navbar">
+    <a href="#landing">Landing</a>
+    <a href="#home">Home</a>
+    <a href="#order">Order</a>
+    <a href="#payment">Payment</a>
+    <a href="#about">About</a>
+  </div>
+
   <section id="landing" class="container">
     <div class="bg-overlay"></div>
     <img src="images/homebg.jpg" alt="homebg" class="bg-home">
@@ -26,6 +34,8 @@
       <h1>Welcome back <br>
         to Sathar Bucks</h1>
       <h3>Where Families, Find Food.</h3>
+      <span id="startOrdering">START ORDERING</span>
+      <span id="aboutUsSpan">ABOUT US</span>
     </div>
   </section>
   <section id="home" class="container">
@@ -84,7 +94,7 @@
       <div class="order-items">
         <div class="items-input" id="input1">
           <span class="input-title">Sunshine Love Toast</span>
-          <input type="number" id="toast" placeholder="0"  min="0">
+          <input type="number" id="toast" placeholder="0" min="0">
         </div>
         <div class="items-input" id="input2">
           <span class="input-title">Lemon Posset</span>
@@ -92,15 +102,15 @@
         </div>
         <div class="items-input" id="input3">
           <span class="input-title">Royal Butter Chicken</span>
-          <input type="number" id="chicken" placeholder="0"  min="0">
+          <input type="number" id="chicken" placeholder="0" min="0">
         </div>
         <div class="items-input" id="input4">
           <span class="input-title">Shepherd’s Pie</span>
-          <input type="number" id="pie" placeholder="0"  min="0">
+          <input type="number" id="pie" placeholder="0" min="0">
         </div>
         <div class="items-input" id="input5">
           <span class="input-title">Tuna Nicoise Salad Bowl</span>
-          <input type="number" id="salad" placeholder="0"  min="0">
+          <input type="number" id="salad" placeholder="0" min="0">
         </div>
         <div class="items-input" id="input6">
           <span class="input-title">Classic Risotto alla Milanese</span>

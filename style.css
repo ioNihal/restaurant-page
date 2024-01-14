@@ -10,6 +10,34 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.navbar {
+    overflow: hidden;
+    background-color: #0a0a0adc;
+    opacity: 0;
+    transition: opacity 1s;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
 .container {
     height: 100%;
     width: 100%;
@@ -85,6 +113,22 @@ body::-webkit-scrollbar {
     letter-spacing: 2px;
 }
 
+.box #startOrdering {
+    background-color: white;
+    color: #333;
+    padding: 3px 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+}
+
+.box #aboutUsSpan {
+    background-color: rgb(153, 0, 0);
+    color: #f1f1f1;
+    padding: 3px 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+}
+
 #home {
     background-color: rgb(14, 13, 13);
     display: flex;
@@ -98,6 +142,7 @@ body::-webkit-scrollbar {
     margin: 70px 0 0 5%;
     border-bottom: 2px solid green;
     width: 7%;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .home-items {
@@ -171,6 +216,7 @@ body::-webkit-scrollbar {
     margin: 50px 0 0 5%;
     border-bottom: 2px solid rgb(192, 6, 0);
     width: 12%;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 #order form {
@@ -243,6 +289,7 @@ form button {
     margin: 50px 0 0 5%;
     border-bottom: 2px solid rgb(255, 136, 0);
     width: 12%;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .checkout-box {
@@ -259,6 +306,7 @@ form button {
 .checkout-box h2 {
     text-align: center;
     margin: 0 0 10% 0;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .checkout-items {
@@ -287,6 +335,7 @@ button {
     border: none;
     color: white;
     cursor: pointer;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 #about {
@@ -300,6 +349,7 @@ button {
 #about h1 {
     color: rgb(196, 39, 0);
     text-align: center;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 #about p {
@@ -318,6 +368,11 @@ button {
         margin: 0;
         padding: 0;
         scroll-behavior: smooth;
+    }
+
+    .navbar a {
+        float: none;
+        display: block;
     }
 
     .container {
@@ -453,7 +508,7 @@ button {
     #about h1 {
         font-size: 1rem;
     }
-    
+
     #about p {
         margin: 0 auto;
         width: 80%;
