@@ -14,28 +14,43 @@ window.onload = function () {
         });
     });
 
+    var navbarLinks = document.querySelectorAll(".navbar a");
+
+    navbarLinks.forEach(link => {
+        if (link.getAttribute('href') !== 'javascript:void(0);') {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        }
+    });
+}
+
+function makeNavBurger() {
+    var navbar = document.getElementById("navbar");
+    if (navbar.className === "navbar") {
+        navbar.className += " responsive";
+    } else {
+        navbar.className = "navbar";
+    }
+}
+
+window.onscroll = function () {
     var navbar = document.getElementById("navbar");
     var firstSectionHeight = document.getElementById("landing").offsetHeight;
-
-    window.onscroll = function () {
+    if (window.innerWidth > 600) {
         if (window.scrollY > firstSectionHeight) {
             navbar.style.opacity = "1";
         } else {
             navbar.style.opacity = "0";
         }
+    } else {
+        navbar.style.opacity = "1";
     }
-
-    var navbarLinks = document.querySelectorAll(".navbar a");
-
-    navbarLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
 }
+
 
 document.getElementById('addCart').addEventListener('click', function (event) {
     event.preventDefault();
